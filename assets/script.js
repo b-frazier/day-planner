@@ -13,6 +13,7 @@ let saveBtnTwo = document.getElementById('saveBtnTwo');
 let saveBtnThree = document.getElementById('saveBtnThree');
 let saveBtnFour = document.getElementById('saveBtnFour');
 let saveBtnFive = document.getElementById('saveBtnFive');
+let clearBtn = document.getElementById('clearBtn');
 
 // text boxes
 let eightA = document.getElementById('eightA');
@@ -104,3 +105,8 @@ saveBtnFive.onclick = function() {
 };
 var five = localStorage.getItem('five')
 fiveP.textContent = five;
+
+clearBtn.onclick = function(){
+    localStorage.clear();
+    location.reload();
+}

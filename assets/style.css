@@ -1,0 +1,18 @@
+:root {
+    --grey: rgb(233, 233, 233); 
+    --green: rgb(141, 217, 149);
+    --blue: rgb(95, 207, 207);
+}
+
+.past {
+    background-color: var(--grey);
+};
+
+
+.present {
+    background-color: var(--green);
+};
+
+.future {
+    background-color: var(--blue);
+};

@@ -1,5 +1,6 @@
 let date = document.getElementById('date');
 let time = document.getElementById('time');
+let textArea = document.getElementById('task-input');
 
 // buttons
 let saveBtnEight = document.getElementById('saveBtnEight');
@@ -34,6 +35,26 @@ function updateTime(){
     time.textContent = now
 }
 setInterval(updateTime, 1000);
+
+let hour = document.querySelector('.hour');
+console.log(hour.textContent);
+let currentHour = dayjs().format('h');
+console.log(currentHour);
+/* check if the current time is equal to time block
+if current time is equal to or greater than (but less than next hour) - present
+if less than - past
+if greater than - future
+*/
+
+// function hourState(){
+//  if (currentHour = hour.textContent){
+//     textArea.classList.add('present')
+//  } else if (currentHour < hour.textContent){
+//     textArea.classList.add('future')
+//  } else if (currentHour > 6){
+//     textArea.classList.add('past')
+//  }
+// };
 
 
 saveBtnEight.onclick = function() {

@@ -6,16 +6,20 @@ let saveBtn = document.getElementById('saveBtn');
 let eightAm = document.getElementById('eightAm');
 
 date.textContent = dayjs().format('MMM D, YYYY');
-time.textContent = dayjs().format('h:mm a');
+
+function updateTime(){
+    let now = dayjs().format('h:mm a');
+    time.textContent = now
+}
+setInterval(updateTime, 1000);
+
 
 saveBtn.onclick = function() {
     const info = eightAm.value;
     localStorage.setItem('info', info)   
 };
 
-let x = localStorage.getItem('info')
+var x = localStorage.getItem('info')
 eightAm.textContent = x;
-
-
 
 

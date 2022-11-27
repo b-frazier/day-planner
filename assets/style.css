@@ -1,7 +1,44 @@
 :root {
     --grey: rgb(233, 233, 233); 
+    --darkgrey: rgb(181, 188, 183);
+    --lightblack: rgb(30, 30, 30);
+    --rust: rgb(203, 196, 177); 
     --green: rgb(141, 217, 149);
     --blue: rgb(95, 207, 207);
+}
+
+body {
+    background-image: url('images/forest.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.task-input {
+    background-color: var(--darkgrey);
+}
+
+.hour {
+    background-color: var(--rust);
+    border-bottom: .5px solid black;
+    border-top: .5px solid black;
+}
+
+button {
+    background-color: var(--rust);
+    border: 0;
+    border-bottom: .5px solid var(--lightblack);
+    border-top: .5px solid var(--lightblack);
+}
+
+textarea {
+    border-bottom: .5px solid var(--lightblack);
+    border-top: .5px solid var(--lightblack);
+}
+
+.clearBtn {
+    border-radius: 8px;
+    height: 45px;
 }
 
 .past {

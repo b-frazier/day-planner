@@ -36,26 +36,22 @@ function updateTime(){
 }
 setInterval(updateTime, 1000);
 
-let hour = document.querySelector('.hour');
-console.log(hour.textContent);
-let currentHour = dayjs().format('h');
-console.log(currentHour);
+
 /* check if the current time is equal to time block
 if current time is equal to or greater than (but less than next hour) - present
 if less than - past
 if greater than - future
 */
 
-// function hourState(){
-//  if (currentHour = hour.textContent){
-//     textArea.classList.add('present')
-//  } else if (currentHour < hour.textContent){
-//     textArea.classList.add('future')
-//  } else if (currentHour > 6){
-//     textArea.classList.add('past')
-//  }
-// };
-
+function hourState(){
+    let currentHour = dayjs().hour();
+        if (8 < currentHour) {
+            textArea.classList.add('past')} 
+        else if (8 == currentHour) {
+            textArea.classList.add('present')}
+        else {
+            textArea.classList.add('future')};
+};
 
 saveBtnEight.onclick = function() {
     const eight = eightA.value;

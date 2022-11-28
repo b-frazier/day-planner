@@ -4,7 +4,7 @@
     --lightblack: rgb(30, 30, 30);
     --rust: rgb(203, 196, 177); 
     --green: rgb(141, 217, 149);
-    --blue: rgb(95, 207, 207);
+    --yellow: rgb(231, 220, 166);
 }
 
 body {
@@ -55,5 +55,5 @@ textarea {
 };
 
 .future {
-    background-color: var(--blue);
+    background-color: var(--yellow);
 };

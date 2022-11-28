@@ -14,6 +14,10 @@ body {
     background-size: cover;
 }
 
+h1 h2 {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
 .task-input {
     background-color: var(--darkgrey);
 }
@@ -34,6 +38,7 @@ button {
 textarea {
     border-bottom: .5px solid var(--lightblack);
     border-top: .5px solid var(--lightblack);
+    font-size: 18px;
 }
 
 .clearBtn {
@@ -44,7 +49,6 @@ textarea {
 .past {
     background-color: var(--grey);
 };
-
 
 .present {
     background-color: var(--green);

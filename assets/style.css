@@ -20,6 +20,9 @@ h1 h2 {
 
 .task-input {
     background-color: var(--darkgrey);
+    border-bottom: .5px solid var(--lightblack);
+    border-top: .5px solid var(--lightblack);
+    font-size: 18px;
 }
 
 .hour {
@@ -33,12 +36,6 @@ button {
     border: 0;
     border-bottom: .5px solid var(--lightblack);
     border-top: .5px solid var(--lightblack);
-}
-
-textarea {
-    border-bottom: .5px solid var(--lightblack);
-    border-top: .5px solid var(--lightblack);
-    font-size: 18px;
 }
 
 .clearBtn {

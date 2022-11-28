@@ -1,4 +1,6 @@
 # Work Day Scheduler
+
+## Acceptance Criteria
 ```md
 GIVEN I am using a daily planner to create a schedule  
 WHEN I open the planner   
@@ -14,3 +16,7 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page   
 THEN the saved events persist   
 ```
+## Preview Image
+<img src="assets/images/day-planner.png" width="700">
+
+https://b-frazier.github.io/module-5-challenge/

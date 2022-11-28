@@ -1,9 +1,8 @@
 :root {
     --grey: rgb(233, 233, 233); 
-    --darkgrey: rgb(181, 188, 183);
     --lightblack: rgb(30, 30, 30);
     --rust: rgb(203, 196, 177); 
-    --green: rgb(141, 217, 149);
+    --green: rgb(181, 188, 183);
     --yellow: rgb(231, 220, 166);
 }
 
@@ -19,7 +18,7 @@ h1 h2 {
 }
 
 .task-input {
-    background-color: var(--darkgrey);
+    background-color: var(--green);
     border-bottom: .5px solid var(--lightblack);
     border-top: .5px solid var(--lightblack);
     font-size: 18px;

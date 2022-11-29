@@ -1,5 +1,5 @@
 :root {
-    --grey: rgb(233, 233, 233); 
+    --grey: rgb(205, 205, 205); 
     --lightblack: rgb(30, 30, 30);
     --rust: rgb(203, 196, 177); 
     --green: rgb(181, 188, 183);
@@ -18,7 +18,6 @@ h1 h2 {
 }
 
 .task-input {
-    background-color: var(--green);
     border-bottom: .5px solid var(--lightblack);
     border-top: .5px solid var(--lightblack);
     font-size: 18px;
@@ -30,12 +29,6 @@ h1 h2 {
     border-top: .5px solid black;
 }
 
-button {
-    background-color: var(--rust);
-    border: 0;
-    border-bottom: .5px solid var(--lightblack);
-    border-top: .5px solid var(--lightblack);
-}
 
 .clearBtn {
     border-radius: 8px;
@@ -44,12 +37,19 @@ button {
 
 .past {
     background-color: var(--grey);
-};
+}
 
 .present {
-    background-color: var(--green);
-};
+    background-color: var(--yellow);
+}
 
 .future {
-    background-color: var(--yellow);
-};
+    background-color: var(--green);
+}
+
+button {
+    background-color: var(--rust);
+    border: 0;
+    border-bottom: .5px solid var(--lightblack);
+    border-top: .5px solid var(--lightblack);
+}

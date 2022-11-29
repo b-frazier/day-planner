@@ -1,6 +1,6 @@
 let date = document.getElementById('date');
-let time = document.getElementById('time');
-let textArea = document.getElementById('task-input');
+let timeNow = document.getElementById('timeNow');
+let textAreas = document.querySelectorAll('.task-input');
 
 // buttons
 let saveBtnEight = document.getElementById('saveBtnEight');
@@ -32,7 +32,7 @@ date.textContent = dayjs().format('MMM D, YYYY');
 
 function updateTime(){
     let now = dayjs().format('h:mm a');
-    time.textContent = now
+    timeNow.textContent = now
 }
 setInterval(updateTime, 1000);
 
@@ -45,12 +45,17 @@ if greater than - future
 
 function hourState(){
     let currentHour = dayjs().hour();
-        if (8 < currentHour) {
-            textArea.classList.add('past')} 
-        else if (8 == currentHour) {
-            textArea.classList.add('present')}
+    for (i = 0; i < textAreas.length; i++){
+        const target = textAreas[i];
+        const time = target.dataset.time;
+        target.classList.remove('past', 'present', 'future');
+        if (time < currentHour) {
+            target.classList.add('past')} 
+        else if (time == currentHour) {
+            target.classList.add('present')}
         else {
-            textArea.classList.add('future')};
+            target.classList.add('future')};
+    }
 };
 
 saveBtnEight.onclick = function() {
@@ -127,3 +132,5 @@ clearBtn.onclick = function(){
     localStorage.clear();
     location.reload();
 }
+
+hourState();

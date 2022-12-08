@@ -19,4 +19,4 @@ THEN the saved events persist
 ## Preview Image
 <img src="assets/images/day-planner.png" width="700">
 
-https://b-frazier.github.io/module-5-challenge/
+https://b-frazier.github.io/day-planner/
